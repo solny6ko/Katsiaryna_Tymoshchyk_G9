@@ -9,6 +9,9 @@ public class Bubble {
     public Bubble(String bubbleGasComposition){
         this.bubbleGasComposition = bubbleGasComposition;
     }
+    public Bubble(){
+    }
+
 
     public void setBubbleGasComposition(String bubbleGasComposition) {
         this.bubbleGasComposition = bubbleGasComposition;
@@ -19,7 +22,7 @@ public class Bubble {
     }
 
     public void bubbleCramp() {
-        System.out.println("Cramp!");
+       System.out.println("Cramp!");
     }
 
 }

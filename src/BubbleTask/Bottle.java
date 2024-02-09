@@ -1,28 +1,25 @@
 package BubbleTask;
 
 public class Bottle {
-   private double volume;
+   private double bottleVolume;
+   private SparklingWater sparklingWater;
 
-   Water Water = new Water();
-
-
-
-
-      public void Degas() {
-        Open open = new Open();
-        Bottle.bubbleCramp(); // Вызов первого метода
-
-      }
-
-   private void bubbleCramp() {
+   public Bottle(double bottleVolume){
+      this.bottleVolume = bottleVolume;
+      this.sparklingWater = new SparklingWater(bottleVolume);
+//      sparklingWater.pump();
+      System.out.println("Bottle is created " + bottleVolume);
    }
 
+//   SparklingWater sparklingWater = new SparklingWater(bottleVolume);
 
-   public class ExampleCaller {
-      public void callMethods() {
-         Example example = new Example();
-         example.method1(); // Вызов первого метода
-         example.method2(); // Вызов второго метода
+
+
+      public void open() {
+         System.out.println("Bottle is opened");
+         sparklingWater.degas();
+
       }
+
 
    }
