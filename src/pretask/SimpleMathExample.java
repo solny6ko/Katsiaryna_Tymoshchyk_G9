@@ -1,10 +1,10 @@
-package Pretask;
+package pretask;
 
 public class SimpleMathExample {
-        public static void main(String[] args){
+    public static void main(String[] args) {
         int rectLength = 30;
         int rectWidth = 1249;
-        int rectArea = rectLength*rectWidth;
+        int rectArea = rectLength * rectWidth;
         System.out.print("Rectanle area = " + rectArea);
 
     }

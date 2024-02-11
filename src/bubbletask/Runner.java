@@ -1,4 +1,4 @@
-package BubbleTask;
+package bubbletask;
 
 public class Runner {
     public static void main(String[] args) {

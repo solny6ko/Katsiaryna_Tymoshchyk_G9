@@ -5,7 +5,7 @@ public class Obstacle {
     private String description;
     private String severity;
 
-    public Obstacle(String description, String severity){
+    public Obstacle(String description, String severity) {
         this.description = description;
         this.severity = severity;
     }
@@ -13,14 +13,16 @@ public class Obstacle {
     public void setSeverity(String severity) {
         this.severity = severity;
     }
-    public String getSeverity(){
+
+    public String getSeverity() {
         return severity;
     }
 
     public void setDescription(String description) {
         this.description = description;
     }
-    public String getDescription(){
+
+    public String getDescription() {
         return description;
     }
 

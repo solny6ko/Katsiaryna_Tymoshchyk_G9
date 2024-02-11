@@ -1,4 +1,4 @@
-package BubbleTask;
+package bubbletask;
 
 //- создать класс SparklingWater, являющийся дочерним Water
 //- у газировки есть пузырьки
@@ -9,13 +9,13 @@ package BubbleTask;
 public class SparklingWater extends Water {
 
     private double bottleVolume;
-//    объявляем постоянную про 1 литр воды содержит 10 тыс пузырьков
+    //    объявляем постоянную про 1 литр воды содержит 10 тыс пузырьков
     private final int BUBBLES_PER_LITER = 10000;
     private int bubblesQuantity;
     Bubble[] bubbles;
 
-//    создаем конструктор для газировки и считаем, сколько пузырьков накачается в бутылку в зависимости от ее объема
-    public SparklingWater(double bottleVolume){
+    //    создаем конструктор для газировки и считаем, сколько пузырьков накачается в бутылку в зависимости от ее объема
+    public SparklingWater(double bottleVolume) {
         this.bottleVolume = bottleVolume;
         this.bubblesQuantity = (int) (bottleVolume * BUBBLES_PER_LITER);
         System.out.println("SparklingWater is created. bubblesQuantity equals to " + bubblesQuantity);
@@ -26,13 +26,11 @@ public class SparklingWater extends Water {
 //массив будет заполнен количеством пузырьков = bubblesQuantity
 
 
-
-
     public void pump(Bubble[] bubbles) {
 //        System.out.println(bubbles.length);
         for (int i = 0; i < bubbles.length; i++) {
             System.out.println(i);
-            bubbles[i] = new Bubble();
+            this.bubbles[i] = new Bubble();
         }
         System.out.println("Gas is pumpped");
 

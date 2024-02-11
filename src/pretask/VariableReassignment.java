@@ -1,7 +1,7 @@
-package Pretask;
+package pretask;
 
 public class VariableReassignment {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int a = 10;
         int initAVal = a;
         a = 20;

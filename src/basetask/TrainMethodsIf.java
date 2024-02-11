@@ -1,24 +1,25 @@
 package basetask;
 
 public class TrainMethodsIf {
-        public int returnNewInt(int intVal) {
-            int result;
-            if (intVal < 8) {
-                result = intVal * 7;
-            } else {
-                result = intVal / 4;
-            }
-            return result;
+    public int returnNewInt(int intVal) {
+        int result;
+        if (intVal < 8) {
+            result = intVal * 7;
+        } else {
+            result = intVal / 4;
+        }
+        return result;
 
     }
-        public long returnNewLong(long longVal) {
-            long longResult;
-            if (Long.valueOf(longVal) < 300) {
-                longResult = Long.valueOf(longVal) - 300;
-            } else {
-                longResult = Long.valueOf(longVal) + 20;
-            }
-            return longResult;
+
+    public long returnNewLong(long longVal) {
+        long longResult;
+        if (Long.valueOf(longVal) < 300) {
+            longResult = Long.valueOf(longVal) - 300;
+        } else {
+            longResult = Long.valueOf(longVal) + 20;
+        }
+        return longResult;
     }
 
     public String returnNewChar(char charVal) {

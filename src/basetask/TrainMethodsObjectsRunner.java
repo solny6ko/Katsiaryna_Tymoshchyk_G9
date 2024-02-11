@@ -3,22 +3,22 @@ package basetask;
 public class TrainMethodsObjectsRunner {
     public static void main(String[] args) {
 
-        TrainMethodsObjects TrainMethodsObjects = new TrainMethodsObjects();
+        TrainMethodsObjects trainMethodsObjects = new TrainMethodsObjects();
 
-        Mouse MouseMikkie = new Mouse("Mikkie", 10);
-        TrainMethodsObjects.processMouse(MouseMikkie);
+        Mouse mouseMikkie = new Mouse("Mikkie", 10);
+        trainMethodsObjects.processMouse(mouseMikkie);
 
-        Souce SouceOne = new Souce("Грибной", "зеленый");
-        TrainMethodsObjects.processSouce(SouceOne);
+        Souce souceOne = new Souce("Грибной", "зеленый");
+        trainMethodsObjects.processSouce(souceOne);
 
-        Bee BeeOne = new Bee("kobieta", 10L);
-        TrainMethodsObjects.processBee(BeeOne);
+        Bee beeOne = new Bee("kobieta", 10L);
+        trainMethodsObjects.processBee(beeOne);
 
-        Obstacle ObstacleOne = new Obstacle("eiffpjmdam", "critical");
-        TrainMethodsObjects.processObstacle(ObstacleOne);
+        Obstacle obstacleOne = new Obstacle("eiffpjmdam", "critical");
+        trainMethodsObjects.processObstacle(obstacleOne);
 
-        Pineapple PineappleOne = new Pineapple("eiffpjmdam", 54.7f);
-        TrainMethodsObjects.processPineapple(PineappleOne);
+        Pineapple pineappleOne = new Pineapple("eiffpjmdam", 54.7f);
+        trainMethodsObjects.processPineapple(pineappleOne);
 
     }
 

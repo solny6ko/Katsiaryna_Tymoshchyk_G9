@@ -5,7 +5,7 @@ public class Mouse {
     private String name;
     private int age;
 
-    public Mouse(String name, int age){
+    public Mouse(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -13,14 +13,16 @@ public class Mouse {
     public void setAge(int age) {
         this.age = age;
     }
-    public int getAge(){
+
+    public int getAge() {
         return age;
     }
 
     public void setName(String name) {
         this.name = name;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
 

@@ -1,4 +1,4 @@
-package Pretask;
+package pretask;
 
 public class VariableExample {
     public static void main(String[] args) {

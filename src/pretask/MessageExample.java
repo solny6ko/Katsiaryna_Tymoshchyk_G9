@@ -1,4 +1,4 @@
-package Pretask;
+package pretask;
 
 public class MessageExample {
     public static void main(String[] args) {

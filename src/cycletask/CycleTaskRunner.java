@@ -1,18 +1,18 @@
 package cycletask;
 
 public class CycleTaskRunner {
-    public static void main(String[] args){
-        CycleTaskMethods CycleTaskMethods = new CycleTaskMethods();
-//      CycleTaskMethods.CycleTaskWhile();
-//      CycleTaskMethods.CycleTaskFor();
-//      CycleTaskMethods.CycleTaskArray();
-//      CycleTaskMethods.CycleTaskArrayPrint();
-//      CycleTaskMethods.CycleTaskArrayPrintReverse();
-//      CycleTaskMethods.CycleTaskArrayPrintMult();
-//        CycleTaskMethods.CycleTaskArrayPrintDouble();
- //       CycleTaskMethods.CycleTaskArrayPrintMin();
- //       CycleTaskMethods.CycleTaskArrayPrintSwitch();
-        CycleTaskMethods.CycleTaskArrayPrintSorting();
+    public static void main(String[] args) {
+        CycleTaskMethods cycleTaskMethods = new CycleTaskMethods();
+        cycleTaskMethods.CycleTaskWhile();
+        cycleTaskMethods.CycleTaskFor();
+        cycleTaskMethods.CycleTaskArray();
+        cycleTaskMethods.CycleTaskArrayPrint();
+        cycleTaskMethods.CycleTaskArrayPrintReverse();
+        cycleTaskMethods.CycleTaskArrayPrintMult();
+        cycleTaskMethods.CycleTaskArrayPrintDouble();
+        cycleTaskMethods.CycleTaskArrayPrintMin();
+        cycleTaskMethods.CycleTaskArrayPrintSwitch();
+        cycleTaskMethods.CycleTaskArrayPrintSorting();
 
     }
 }

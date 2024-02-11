@@ -6,6 +6,7 @@ public class TrainMethodsReturn {
         return intVal;
 
     }
+
     public long returnNewLong(long longVal) {
         long longResult = Long.valueOf(longVal) - 4;
         return longVal;

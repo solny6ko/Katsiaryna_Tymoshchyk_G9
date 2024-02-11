@@ -5,7 +5,7 @@ public class Bee {
     private String gender;
     private Long weight;
 
-    public Bee(String gender, Long weight){
+    public Bee(String gender, Long weight) {
         this.gender = gender;
         this.weight = weight;
     }
@@ -13,14 +13,16 @@ public class Bee {
     public void setWeight(Long weight) {
         this.weight = weight;
     }
-    public long getWeight(){
+
+    public long getWeight() {
         return weight;
     }
 
     public void setGender(String gender) {
         this.gender = gender;
     }
-    public String getGender(){
+
+    public String getGender() {
         return gender;
     }
 
