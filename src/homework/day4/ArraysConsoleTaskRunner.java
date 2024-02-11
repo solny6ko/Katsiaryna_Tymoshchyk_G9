@@ -7,6 +7,7 @@ public class ArraysConsoleTaskRunner {
         arraysConsoleTask.sumOfNelements(5,yourArray);
         arraysConsoleTask.selectedElementsAreGraterThanNReverse(40,yourArray);
         arraysConsoleTask.sumOfElementsMultipleOfDayOfCurrentMonth(yourArray);
+        arraysConsoleTask.printNiceCowToConsole();
 
 
     }
