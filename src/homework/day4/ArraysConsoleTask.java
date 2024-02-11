@@ -45,6 +45,23 @@ public class ArraysConsoleTask {
         System.out.println("");
 
     }
+//       написать метод, который вернет сумму тех элементов целочисленного массива,
+//       которые кратны числу текущего месяца (массив подается в сигнатуру метода)
+
+    public void sumOfElementsMultipleOfDayOfCurrentMonth(int[] yourArray) {
+        Date current = new Date();
+        int currentDate = current.getDate();
+        System.out.println("Today's date is " + current.getDate());
+        int sum = 0;
+        for (int i = 0; i < yourArray.length; i++) {
+            if (yourArray[i] % currentDate == 0) {
+                sum += yourArray[i];
+            }
+
+        }
+        System.out.println("Sum of all array elements multiple to today's date " + currentDate + " is equal to " + sum);
+
+    }
 
 
 }
