@@ -9,8 +9,6 @@ public class Bubble {
     public Bubble(String gas) {
         this.gas = gas;
     }
-//    public Bubble() {
-//    }
 
     public void setGas(String gas) {
         this.gas = gas;

@@ -14,6 +14,7 @@ public abstract class Water {
         this.smell = smell;
         this.temperature = temperature;
     }
+
     public String getColor() {
         return color;
     }
