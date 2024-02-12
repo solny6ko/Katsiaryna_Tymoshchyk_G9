@@ -4,27 +4,27 @@ public class Bubble {
 
     private static final double BUBBLE_VOLUME = 0.3;
 
-    private String bubbleGasComposition;
+    private String gas;
 
-    public Bubble(String bubbleGasComposition) {
-        this.bubbleGasComposition = bubbleGasComposition;
+    public Bubble(String gas) {
+        this.gas = gas;
     }
 
-    public Bubble() {
+    public void setGas(String gas) {
+        this.gas = gas;
     }
 
-
-    public void setBubbleGasComposition(String bubbleGasComposition) {
-        this.bubbleGasComposition = bubbleGasComposition;
-    }
-
-    public String getBubbleGasComposition() {
-        return bubbleGasComposition;
+    public String getGas() {
+        return gas;
 
     }
 
-    public void bubbleCramp() {
+    public void cramp() {
         System.out.println("Cramp!");
+    }
+
+    public double getVolume() {
+        return BUBBLE_VOLUME;
     }
 
 }
