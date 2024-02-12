@@ -43,7 +43,7 @@ public abstract class Water {
         this.smell = smell;
     }
 
-    public void setTemperature(int temperature) {
+    public void setTemperature() {
         this.temperature = temperature;
     }
 }

@@ -23,18 +23,35 @@ public class Bottle {
         return volume;
     }
 
-    public void open() {
-        System.out.println("Bottle is opened");
+    public void open(){
+        this.water.setOpened();
+    }
+
+    public void warm(int temperature){
+        water.setTemperature();
+    }
+
+    public Water getWater(){
+        return water;
+    }
+
+    public void setWater(Water water){
+        this.water=water;
+    }
+
+    public void setBubbles(){
         Bubble[] newBubble = sparklingWater.getBubbles();
         sparklingWater.bubbles = new Bubble[(int) (volume * BUBBLES_PER_LITER)];
         sparklingWater.pump(sparklingWater.bubbles);
+    }
+
+
+    public void open() {
+        System.out.println("Bottle is opened");
+
         sparklingWater.degas();
 
     }
-//
-//    public void setBubbles(){
-//
-//    }
 
 
 }

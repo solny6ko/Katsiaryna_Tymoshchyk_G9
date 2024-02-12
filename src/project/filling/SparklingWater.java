@@ -2,17 +2,17 @@ package project.filling;
 
 public class SparklingWater extends Water {
 
-    //  private boolean isOpened;
-    public Bubble[] bubbles;
+    private boolean isOpened;
+    private Bubble[] bubbles;
 
     public SparklingWater(String color, String transparency, String smell, int temperature) {
         super(color, transparency, smell, temperature);
+        isOpened();
     }
 
     public Bubble[] getBubbles() {
         return bubbles;
     }
-
 
     public Bubble[] pump(Bubble[] bubbles) {
         for (int i = 0; i < bubbles.length; i++) {
@@ -22,6 +22,11 @@ public class SparklingWater extends Water {
         return bubbles;
     }
 
+    public void setOpened() {
+        boolean isOpened = true;
+        degas();
+    }
+
     public void degas() {
         System.out.println("we are in degas method");
         for (Bubble bubble : bubbles) {
@@ -29,6 +34,11 @@ public class SparklingWater extends Water {
         }
         bubbles = null;
     }
+
+    private void isOpened() {
+
+    }
 }
+
 
 
