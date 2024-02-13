@@ -27,7 +27,7 @@ public class SparklingWater extends Water {
         degas();
     }
 
-    public void degas() {
+    private void degas() {
         System.out.println("we are in degas method");
         for (Bubble bubble : bubbles) {
             bubble.cramp();

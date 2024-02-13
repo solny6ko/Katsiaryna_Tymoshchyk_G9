@@ -6,9 +6,9 @@ import project.filling.Water;
 
 public class Bottle {
     private double volume;
-    private Water water;
+    private SparklingWater water;
     private static final double BUBBLES_PER_LITER = 1000;
-    SparklingWater sparklingWater = new SparklingWater("red", "nope", "digusting", 10);
+    SparklingWater sparklingWater = new SparklingWater(water);
 
     public Bottle(double volume) {
         this.volume = volume;
@@ -40,9 +40,9 @@ public class Bottle {
     }
 
     public void setBubbles(){
-        Bubble[] newBubble = sparklingWater.getBubbles();
-        sparklingWater.bubbles = new Bubble[(int) (volume * BUBBLES_PER_LITER)];
-        sparklingWater.pump(sparklingWater.bubbles);
+        Bubble[] newBubble = water.getBubbles();
+        water.bubbles = new Bubble[(int) (volume * BUBBLES_PER_LITER)];
+        water.pump(water.bubbles);
     }
 
 
