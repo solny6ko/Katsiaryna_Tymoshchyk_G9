@@ -1,6 +1,6 @@
 package homework.day5.playground.essence.creatures;
 
-public class Beetle extends Insect {
+public class Beetle extends Insect implements Crawlable{
 
 
 //    Beetle newBeetle = new Beetle(15);
