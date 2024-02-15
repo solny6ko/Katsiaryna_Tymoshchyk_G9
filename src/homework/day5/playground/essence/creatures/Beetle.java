@@ -7,8 +7,8 @@ public class Beetle extends Insect implements Crawlable{
 
     int mass;
 
-    public Beetle(int mass) {
-        super(mass);
+    public Beetle(int mass, String name) {
+        super(mass, name);
     }
 
     @Override

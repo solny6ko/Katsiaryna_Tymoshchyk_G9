@@ -3,8 +3,8 @@ package homework.day5.playground.essence.creatures;
 public class Carrot extends Vegetable{
 
     int mass;
-    public Carrot(int mass) {
-        super(mass);
+    public Carrot(int mass, String name) {
+        super(mass, name);
     }
 
     @Override
