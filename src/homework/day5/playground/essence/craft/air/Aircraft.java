@@ -5,9 +5,6 @@ import homework.day5.playground.essence.Matter;
 import homework.day5.playground.essence.craft.Transportable;
 
 public abstract class Aircraft extends Matter implements Flyable, Transportable {
-    public Aircraft(int mass) {
-        super(mass);
-    }
 
     protected String name;
 
@@ -23,4 +20,9 @@ public abstract class Aircraft extends Matter implements Flyable, Transportable 
     public void setName(String name) {
         this.name = name;
     }
+
+    public void fly(String direction){
+        System.out.printf("I am %s, my name is %s and I amd flying to %s", getClass().getSimpleName(), getClass().getName() ,direction).println();
+    }
+
 }

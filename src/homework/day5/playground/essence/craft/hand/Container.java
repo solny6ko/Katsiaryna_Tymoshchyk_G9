@@ -4,11 +4,8 @@ import homework.day5.playground.essence.Matter;
 
 public abstract class Container extends Matter {
 
-    public Container(int mass) {
-        super(mass);
-    }
-
     protected String name;
+
 
     public Container(int mass, String name) {
         super(mass);
