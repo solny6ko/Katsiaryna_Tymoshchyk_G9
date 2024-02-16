@@ -11,4 +11,8 @@ public class Car extends Vehicle {
         return distance;
     }
 
+    public void drive(String direction) {
+        System.out.printf("I am %s, my name is %s and I amd driving to %s", getClass().getSimpleName(), this.getName(), direction).println();
+    }
+
 }

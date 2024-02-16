@@ -10,4 +10,8 @@ public class Moped extends Vehicle {
         System.out.printf("I am %s, my name is %s and I am moving from point %s to point %s", getClass().getSimpleName(), this.getName(), pointA, pointB).println();
         return distance;
     }
+
+    public void drive(String direction) {
+        System.out.printf("I am %s, my name is %s and I amd driving to %s", getClass().getSimpleName(), this.getName(), direction).println();
+    }
 }
