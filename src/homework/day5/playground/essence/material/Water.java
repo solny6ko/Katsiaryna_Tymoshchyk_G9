@@ -6,4 +6,8 @@ public class Water extends Matter implements Pourable{
     public Water(int mass) {
         super(mass);
     }
+    public void spread(String storeName){
+        System.out.printf("I am %s and I am spreading in %s", this.getClass().getSimpleName(), storeName).println();
+        System.out.println("whobl-whobl..");
+    };
 }
