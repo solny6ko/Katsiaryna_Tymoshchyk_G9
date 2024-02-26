@@ -1,5 +1,7 @@
 package homework.day8.initialObjectsClasses;
 
+import java.util.Objects;
+
 public class Water {
     private String color;
     private String smell;
@@ -26,17 +28,20 @@ public class Water {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
     public String toString() {
-        return super.toString();
+        return "Water {" + "color='" + color + '\'' + ", smell='" + smell + '\'' + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, smell);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Water water = (Water) o;
+        return Objects.equals(color, water.color) && Objects.equals(smell, water.smell);
     }
 }

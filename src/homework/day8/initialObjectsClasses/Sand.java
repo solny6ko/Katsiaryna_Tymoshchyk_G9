@@ -1,5 +1,7 @@
 package homework.day8.initialObjectsClasses;
 
+import java.util.Objects;
+
 public class Sand {
     private int weight;
     private String name;
@@ -26,17 +28,20 @@ public class Sand {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
     public String toString() {
-        return super.toString();
+        return "Sand {" + "weight:" + weight + ", name:'" + name + '\'' + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Sand sand = (Sand) o;
+        return weight == sand.weight && Objects.equals(name, sand.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(weight, name);
     }
 }

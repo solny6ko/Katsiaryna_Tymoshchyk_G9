@@ -1,5 +1,8 @@
 package homework.day8.CollectionsMethods;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -18,9 +21,18 @@ public class MyCars {
         cars.add("Ауди");
 
 //Проитерировать список через for-each и отпечатать слова в файл cars через с новой строки в кавычках
-        for (String car : cars) {
-            System.out.println("\"" + car + "\" ");
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Katarina\\Java\\files\\cars.txt"));
+            for (String car : cars) {
+                out.write("\"" + car + "\"");
+                out.newLine();
         }
+            out.close();
+
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+
 //Найти и удалить из набора авто, в названии которых больше 4 букв
         Iterator<String> iterator = cars.iterator();
         while (iterator.hasNext()) {

@@ -22,9 +22,8 @@ public class MyCities {
         }
         System.out.println(lettersCount);
 //Проитерировать список по индексу и отпечатать слова в консоль через пробел
-        for (String cityPrint : cities) {
-            System.out.print(cityPrint  + " ");
+        for (int i = 0; i < cities.size(); i++) {
+            System.out.print(cities.get(i) + " ");
         }
-
     }
 }

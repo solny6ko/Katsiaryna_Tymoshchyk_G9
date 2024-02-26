@@ -1,5 +1,7 @@
 package homework.day8.initialObjectsClasses;
 
+import java.util.Objects;
+
 public class Chair {
     private int height;
     private int width;
@@ -26,18 +28,21 @@ public class Chair {
     }
 
     @Override
-    public int hashCode() {
-        return super.hashCode();
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        return super.equals(obj);
-    }
-
-    @Override
     public String toString() {
-        return super.toString();
+        return "Chair {" + "height=" + height + ", width=" + width + '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Chair chair = (Chair) o;
+        return height == chair.height && width == chair.width;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(height, width);
     }
 
 }
