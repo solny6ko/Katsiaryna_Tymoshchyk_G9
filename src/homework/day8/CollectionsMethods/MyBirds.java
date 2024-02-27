@@ -17,7 +17,6 @@ public class MyBirds {
 //Посчитать сколько птиц содержат больше 1 гласной и вывести в число в консоль
         for (String bird : birds) {
             int countVowels = 0;
-            char[] c = bird.toCharArray();
             for (int i = 0; i < bird.length(); i++) {
                 if (bird.charAt(i) == 'а' || bird.charAt(i) == 'о' || bird.charAt(i) == 'у' || bird.charAt(i) == 'э' || bird.charAt(i) == 'ы' || bird.charAt(i) == 'я' || bird.charAt(i) == 'ё' || bird.charAt(i) == 'ю' || bird.charAt(i) == 'е' || bird.charAt(i) == 'и')
                     countVowels++;
