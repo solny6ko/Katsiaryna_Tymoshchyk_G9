@@ -37,8 +37,9 @@ public class MyFurniture {
         }
         System.out.println("");
 //Проитерировать карту и отпечатать пары ключ-значение в консоль
-        for (Map.Entry<Integer, Chair> entry: myChairMap.entrySet()){
-            System.out.println(entry.getKey() + " " +  entry.getValue());
+        for (Map.Entry<Integer, Chair> entry : myChairMap.entrySet()) {
+            System.out.println(entry);
+//            System.out.println(entry.getKey() + " " +  entry.getValue());
         }
     }
 }
