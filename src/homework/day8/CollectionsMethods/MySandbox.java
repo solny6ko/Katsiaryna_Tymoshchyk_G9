@@ -46,7 +46,8 @@ public class MySandbox {
 //Проитерировать карту и отпечатать пары ключ-значение в консоль
 
         for (Map.Entry<Integer, Sand> entry: mySandMap.entrySet()){
-            System.out.println(entry.getKey() + " " +  entry.getValue());
+            System.out.println(entry);
+//            System.out.println(entry.getKey() + " " +  entry.getValue());
         }
     }
 }
