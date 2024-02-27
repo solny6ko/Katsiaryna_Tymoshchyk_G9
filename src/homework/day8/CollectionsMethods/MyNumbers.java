@@ -15,7 +15,7 @@ public class MyNumbers {
         }
 //Посчитать сумму всех чисел и вывести результат в консоль
         int totalSum = 0;
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             totalSum = totalSum + number;
         }
         System.out.println("Сумма всех чисел равна: " + totalSum);
@@ -30,7 +30,7 @@ public class MyNumbers {
         Collections.sort(numbers, Collections.reverseOrder());
         System.out.println("");
 //Проитерировать список через for-each и отпечатать числа в консоль через пробел
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             System.out.print(number + " ");
         }
     }
