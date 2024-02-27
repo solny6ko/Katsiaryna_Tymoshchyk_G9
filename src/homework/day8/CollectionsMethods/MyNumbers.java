@@ -10,7 +10,7 @@ public class MyNumbers {
         Integer numbersArray[] = new Integer[]{3342, 34, 79, 23426, 68, 1324, 55, 7699};
         List<Integer> numbers = Arrays.asList(numbersArray);
 //Проитерировать список через for-each и отпечатать числа в консоль новой строки
-        for (Integer number : numbers) {
+        for (int number : numbers) {
             System.out.println(number);
         }
 //Посчитать сумму всех чисел и вывести результат в консоль
