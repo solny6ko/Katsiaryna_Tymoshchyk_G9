@@ -14,14 +14,14 @@ public class BirdsRunner {
 //Убрать все символы мягкого знака
 //Разбить на новые строки по букве "б"
 //Отпечатать в консоль с новой строки в виде --Чайка--
-        Stream.of(birds.stream().map(s -> s.replace("о", "а")).
-                        map(s -> s.toLowerCase()).
-                        map(String::valueOf).
-                        collect(Collectors.joining())).
-                map(s -> s.replace("ь", "")).
-                flatMap(s -> Arrays.stream(s.split("б"))).
-                map(name -> name.substring(0, 1).toUpperCase() + name.substring(1)).
-                map(s -> "--" + s + "--").
-                forEach(System.out::println);
+        Stream.of(birds.stream()
+                        .map(s -> s.replace("о", "а"))
+                        .map(s -> s.toLowerCase())
+                        .collect(Collectors.joining()))
+                .map(s -> s.replace("ь", ""))
+                .flatMap(s -> Arrays.stream(s.split("б")))
+                .map(name -> name.substring(0, 1).toUpperCase() + name.substring(1))
+                .map(s -> "--" + s + "--")
+                .forEach(System.out::println);
     }
 }
