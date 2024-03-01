@@ -1,7 +1,9 @@
 package homework.day9;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
 public class ButterfliesRunner {
     public static void main(String[] args) {
 //Создать пустой список стрингов butterflies (через new ArrayList)

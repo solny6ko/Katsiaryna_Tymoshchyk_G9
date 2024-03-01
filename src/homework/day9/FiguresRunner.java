@@ -10,9 +10,9 @@ public class FiguresRunner {
 //Заменить каждое слово на целое число, соответствующее количеству буков в слове
 //Отфильтровать числа, которые больше 4
 //Отпечатать все оставшиеся числа в консоль
-        streamFigures.map(String::length).
-                filter(length -> length > 4).
-                map(Object::toString).toList().
-                forEach(System.out::println);
+        streamFigures
+                .map(String::length)
+                .filter(length -> length > 4)
+                .forEach(System.out::println);
     }
 }

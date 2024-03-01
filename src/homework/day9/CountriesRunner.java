@@ -1,6 +1,8 @@
 package homework.day9;
+
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
 public class CountriesRunner {
     public static void main(String[] args) {
 //Создать поток данных стрингов countries из 4 стран (Андора, Португалия, Англия, Замбия) (через Stream.of())
@@ -11,7 +13,7 @@ public class CountriesRunner {
 //Добавить к каждому названию кавычки
 //Отпечатать в консоль с новой строки
         streamCountries.filter(s -> s.toLowerCase().
-                matches(".*[аеёиоуыюя].*")).
+                        matches(".*[аеёиоуыюя].*")).
                 filter(s -> s.length() < 7).
                 map(String::toUpperCase).
                 map(s -> "\"" + s + "\"").

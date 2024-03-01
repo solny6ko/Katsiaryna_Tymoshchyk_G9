@@ -1,6 +1,8 @@
 package homework.day9;
+
 import java.util.ArrayList;
 import java.util.List;
+
 public class CitiesRunner {
     public static void main(String[] args) {
 //Создать пустой список стрингов cities (через new ArrayList)
