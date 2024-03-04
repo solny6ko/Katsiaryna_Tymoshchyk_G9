@@ -6,6 +6,8 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.lang.Math.round;
+
 public class DoublesRunner {
     public static void main(String[] args) {
 //Создать поток данных дробных чисел doubles из 8 чисел (33.42, 34.3, 0.79, 2.3426, 6.8, 13.24, 5.5, 769.9) через (Stream.of())
@@ -17,13 +19,7 @@ public class DoublesRunner {
 //создавая обьекты с обьемом равным числу из исходного потока и именем по маске "Bubble vol-" + i, где i - число из исходного потока
 //Отпечатать в консоль каждый из обьектов нового потока с новой строки
 //Найти общий обьем полученного потока пузырьков и отпечатать в консоль
-        doublesStream.map(s -> {
-                    if ((s - s.intValue()) < 0.5) {
-                        return s.intValue();
-                    } else {
-                        return s.intValue() + 1;
-                    }
-                })
+        doublesStream.map(s -> (int)Math.round(s))
                 .map(s -> {
                     Random random = new Random();
                     return random.nextInt(0, s + 1);
