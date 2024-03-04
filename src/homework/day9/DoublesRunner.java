@@ -2,6 +2,7 @@ package homework.day9;
 
 import homework.day8.initialObjectsClasses.Bubble;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -19,7 +20,7 @@ public class DoublesRunner {
 //создавая обьекты с обьемом равным числу из исходного потока и именем по маске "Bubble vol-" + i, где i - число из исходного потока
 //Отпечатать в консоль каждый из обьектов нового потока с новой строки
 //Найти общий обьем полученного потока пузырьков и отпечатать в консоль
-        doublesStream.map(s -> (int)Math.round(s))
+        System.out.println(doublesStream.map(s -> (int) round(s))
                 .map(s -> {
                     Random random = new Random();
                     return random.nextInt(0, s + 1);
@@ -32,7 +33,9 @@ public class DoublesRunner {
                     }
                     return bubbles;
                 })
-                .forEach(System.out::println);
-//        IDK how to print this stuff....
+                .peek(s -> System.out.println(Arrays.toString(s)))
+                .flatMap(Arrays::stream)
+                .mapToInt(Bubble::getVolume)
+                .sum());
     }
 }

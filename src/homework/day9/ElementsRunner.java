@@ -22,18 +22,5 @@ public class ElementsRunner {
                     }
                 })
                 .forEach(System.out::println);
-
-//        .flatMap(s -> Stream.of(s.split("\\s+")))
-//                .map(word -> {
-//                    if (word.length() % 2 == 0) {
-//                        return String.valueOf(word.length());
-//                    } else {
-//                        return word.replaceAll("e", "o");
-//                    }
-//                })
-//                .distinct()
-//                .forEach(System.out::println);
-
-
     }
 }
