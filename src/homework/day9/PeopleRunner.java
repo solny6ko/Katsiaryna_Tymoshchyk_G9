@@ -18,7 +18,7 @@ public class PeopleRunner {
 //Вычислить средний возраст конечного людей и отпечатать в новый текстовый файл
         System.out.println(people.filter(s -> s.getAge() < 60)
                 .sorted(((o1, o2) -> o1.getName().compareTo(o2.getName())))
-                .map(s -> new Person(s.getAge() + 4,s.getName()))
+                .map(s -> new Person(s.getAge() + 4, s.getName()))
                 .mapToInt(Person::getAge)
                 .average());
 

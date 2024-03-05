@@ -21,10 +21,9 @@ public class BubbleRunner {
         System.out.println(bubblesArray.stream()
                 .filter(s -> s.getVolume() > 3)
                 .sorted(Comparator.comparing(Bubble::getName))
-                .map(s -> new Bubble((s.getVolume()*3), "s"))
+                .map(s -> new Bubble((s.getVolume() * 3), (s.getName())))
                 .mapToInt(Bubble::getVolume)
                 .sum());
-
 
 
     }
