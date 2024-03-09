@@ -2,6 +2,9 @@ package homework.day9;
 
 import homework.day8.initialObjectsClasses.Person;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.stream.Stream;
 
 public class PeopleRunner {
@@ -20,7 +23,16 @@ public class PeopleRunner {
                 .sorted(((o1, o2) -> o1.getName().compareTo(o2.getName())))
                 .map(s -> new Person(s.getAge() + 4, s.getName()))
                 .mapToInt(Person::getAge)
-                .average());
+                .average().orElse(0));
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Katarina\\Java\\files\\ReadTextDeleteVowelRewriteTextToFile.txt"));
+            out.write(lineSwithoutVowel);
+            out.close();
+
+        } catch (IOException | NullPointerException e) {
+            System.out.println(e);
+
+        }
 
     }
 }
