@@ -19,20 +19,19 @@ public class PeopleRunner {
 //Отсортировать в восходящем порядке по именам
 //На основании существующего потока данных создать новый, в котором каждый новый Person имеет возраст на 4 года больше исходного
 //Вычислить средний возраст конечного людей и отпечатать в новый текстовый файл
-        System.out.println(people.filter(s -> s.getAge() < 60)
+
+        double peopleAverageAge = people.filter(s -> s.getAge() < 60)
                 .sorted(((o1, o2) -> o1.getName().compareTo(o2.getName())))
                 .map(s -> new Person(s.getAge() + 4, s.getName()))
                 .mapToInt(Person::getAge)
-                .average().orElse(0));
+                .average().orElse(0);
         try {
-            BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Katarina\\Java\\files\\ReadTextDeleteVowelRewriteTextToFile.txt"));
-            out.write(lineSwithoutVowel);
+            BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Katarina\\Java\\files\\People.txt"));
+            String peopleAverageAgeToString = String.valueOf(peopleAverageAge);
+            out.write(peopleAverageAgeToString);
             out.close();
-
         } catch (IOException | NullPointerException e) {
             System.out.println(e);
-
         }
-
     }
 }

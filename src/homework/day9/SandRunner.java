@@ -2,6 +2,9 @@ package homework.day9;
 
 import homework.day8.initialObjectsClasses.Sand;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -30,6 +33,16 @@ public class SandRunner {
                 .map(s -> new Sand(s.getWeight() * 2, s.getName().toUpperCase()))
                 .collect(Collectors.toMap(Sand::getWeight, Sand::getName))
                 .entrySet()
-                .forEach(System.out::println);
+                .forEach(entrySet -> {
+                    try {
+                        BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Katarina\\Java\\files\\Sand.txt"));
+                        String sandEntry = entrySet.getKey().toString() + ": " + entrySet.getValue().toString();
+                        out.write(sandEntry);
+                        out.close();
+
+                    } catch (IOException | NullPointerException e) {
+                        System.out.println(e);
+                    }
+                });
     }
 }

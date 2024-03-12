@@ -4,6 +4,9 @@ import homework.day8.initialObjectsClasses.Bubble;
 import homework.day8.initialObjectsClasses.Chair;
 import homework.day8.initialObjectsClasses.Sand;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Comparator;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -79,8 +82,18 @@ public class ChairRunner {
                     return new Bubble(v, bubbleName.trim());
 
                 })
-//                .map()
-                .forEach(System.out::println);
+                .forEach(bubble -> {
+                    try {
+                        BufferedWriter out = new BufferedWriter(new FileWriter("C:\\Katarina\\Java\\files\\Bubble.txt"));
+                        String bubbleObject = bubble.toString();
+                        out.write(bubbleObject);
+                        out.close();
+
+                    } catch (IOException | NullPointerException e) {
+                        System.out.println(e);
+
+                    }
+                });
 
     }
 }

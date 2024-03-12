@@ -29,7 +29,5 @@ public class WaterRunner {
                 .map(Water::getSmell)
                 .collect(Collectors.joining())
                 .length());
-
-
     }
 }

@@ -24,7 +24,5 @@ public class BubbleRunner {
                 .map(s -> new Bubble((s.getVolume() * 3), (s.getName())))
                 .mapToInt(Bubble::getVolume)
                 .sum());
-
-
     }
 }
