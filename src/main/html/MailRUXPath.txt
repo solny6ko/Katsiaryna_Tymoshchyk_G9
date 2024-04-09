@@ -1,0 +1,29 @@
+1.  Лого мэйл.ру
+    1. //a[@data-testid='whiteline-logo-item']/img
+    2. //div[@class='ph-container svelte-dh1pal']/a/img
+2. Кнопка Войти правый верхний угол
+    1. //button[@class='ph-login svelte-1au561b']
+    2. //div[@class='ph-auth svelte-1au561b']/button
+3. Ссылка регистрация
+    1. //a[@class='ph-project ph-project__register svelte-1au561b']
+    2. //div[@class='ph-auth svelte-1au561b']/a
+4. Меню Облако
+    1. //ul[@class='ph-projects__list svelte-df8yjz']/li[2]
+5. Кнопка Войти левый блок
+    1. //button[@class='resplash-btn resplash-btn_primary resplash-btn_mailbox-big cea-fefe-ehxscg']
+    2. //div[@id='mailbox']/div/button
+6. Кнопка Создать почту левый блок
+    1. //a[@class='resplash-btn resplash-btn_outlined-themed resplash-btn_mailbox-big cea-fefe-ehxscg']
+    2. //div[@id='mailbox']/div[2]/a
+7. Погода
+    1. //a[@class='weather__current cea-fefe-fswwb weather__current_animate']
+    2. //div[@class='weather cea-fefe-fswwb']/a[1]
+8. Погода - кнопка раскрыть с подробностями
+    1. //a[@class='weather__arrow cea-fefe-fswwb']
+    2. //div[@class='weather__header cea-fefe-fswwb']/a[last()]
+9. Раздел Леди
+    1. //a[@href='//lady.mail.ru/']
+    2. //div[@class='tabs cea-fefe-1n7t1gm tabs_overflow_hidden']/a[5]
+10. Вторая новость
+    1. //div[@class='news-item cea-fefe-1ifzevr']/a 
+    2. //ul[@class='tabs-content cea-fefe-islsxv']/li[2]/div/a
